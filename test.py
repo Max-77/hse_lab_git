@@ -2,7 +2,7 @@ from main import get_random_number
 
 
 def test_1(min_value, max_value):
-    random_value = get_random_number(min_value, max_value)
+    random_value = get_random_number(min_value, max_value) - (max_value + 1)
 
     assert random_value >= min_value
 
